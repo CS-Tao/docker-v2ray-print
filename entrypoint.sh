@@ -1,12 +1,10 @@
 #!/bin/sh
 set -e
 
-# cd /var/v2ray/info/
+OUTPUT_FOLDER=volume
 
-OUTPUT_FOLDER=print
-
-if [ ! -d $OUTPUT_FOLDER ]; then
-    mkdir $OUTPUT_FOLDER
+if [ -f $OUTPUT_FOLDER/config.json ]; then
+  cp $OUTPUT_FOLDER/config.json ./config.json
 fi
 
 OUTPUT_FILE=$OUTPUT_FOLDER/output.txt
