@@ -13,7 +13,7 @@ COPY index.js /var/v2ray/index.js
 COPY entrypoint.sh /var/v2ray/entrypoint.sh
 COPY json2vmess.py /var/v2ray/json2vmess.py
 
-RUN chmod +x /var/v2ray/entrypoint.sh
+RUN chmod +x /var/v2ray/entrypoint.sh && date
 
 WORKDIR /var/v2ray/
 
