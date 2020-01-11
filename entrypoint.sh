@@ -22,7 +22,7 @@ python3 ./json2vmess.py $@ ./config.json > ${OUTPUT_FILE}
 
 echo "Generate QR code..."
 node index.js $(cat ${OUTPUT_FILE}) > ${OUTPUT_FILE}
-echo -e "\033[36mLast launch time: ${TZ} $(date "+%Y-%m-%d %H:%M:%S") \033[0m\n" >> ${OUTPUT_FILE}
+echo -e "\033[36mLast launch time: $(date) \033[0m\n" >> ${OUTPUT_FILE}
 
 cat ${OUTPUT_FILE}
 
