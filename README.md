@@ -10,7 +10,7 @@
 ```bash
 sudo docker run -d --rm \
   --name v2ray-print \
-  -v ./print/:/var/v2ray/info/volume \
+  -v ./print/:/var/v2ray/volume \
   docker.pkg.github.com/cs-tao/docker-v2ray-print/docker-v2ray-print:master
 ```
 
