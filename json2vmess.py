@@ -156,7 +156,7 @@ if __name__ == "__main__":
                         "FILTER starts with ! means negative selection. Multiple filter is accepted.")
     parser.add_argument('-m', '--amend',
                         action="append",
-                        help="Amend to the output values, can be use multiple times. eg: -a port:80 -a ps:amended")
+                        help="Amend to the output values, can be use multiple times. eg: -m port:80 -m ps:amended")
     parser.add_argument('--debug',
                         action="store_true",
                         default=False,
