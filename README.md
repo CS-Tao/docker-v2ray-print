@@ -11,7 +11,7 @@
 sudo docker run -d --rm \
   --name v2ray-print \
   -v ./print/:/var/v2ray/volume \
-  docker.pkg.github.com/cs-tao/docker-v2ray-print/docker-v2ray-print:master
+  docker.pkg.github.com/cs-tao/docker-v2ray-print/docker-v2ray-print:v1.0.0
 ```
 *提示：此处使用的是 GitHub Docker Registry 的镜像，也可以使用 Docker Hub 的镜像 [cstao/docker-v2ray-print](https://hub.docker.com/r/cstao/docker-v2ray-print)，下面均以 Docker Hub 的镜像为例*
 
